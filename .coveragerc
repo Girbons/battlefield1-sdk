@@ -1,0 +1,6 @@
+[run]
+source = bf1_sdk
+
+[report]
+skip_covered = True
+show_missing = True
