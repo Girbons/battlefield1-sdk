@@ -5,6 +5,12 @@ class InvalidAPIKey(Exception):
     """
 
 
+class Redirection(Exception):
+    """
+    Redirection
+    """
+
+
 class BadRequest(Exception):
     """
     400 Bad Request
