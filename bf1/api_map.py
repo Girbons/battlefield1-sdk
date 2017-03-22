@@ -1,108 +1,104 @@
 _API_MAP = {
-    'api_root': {
-        'base_url': 'https://battlefieldtracker.com/bf1/api',
+    'current': {
+        'api_root': 'https://battlefieldtracker.com/bf1/api/',
+        'api': {
 
-            'stats': {
-                'api_request': 'Stats/',
-                'api': {
-                    'carreer_for_owned_games': {
-                        'url': 'CareerForOwnedGames/',
-                        'method': 'get',
-                    },
+            'stats_service': {
+
+                'career_for_owned_games': {
+                    'url': 'Stats/CareerForOwnedGames?{platform}&{username}',
+                    'method': 'get'
+                },
 
                 'basic_stats': {
-                    'url': 'BasicStats/',
-                    'method': 'get',
-                    'description': 'Get user base stats'
+                    'url': 'Stats/BasicStats?{platform}&{username}',
+                    'method': 'get'
                 },
 
                 'detailed_stats': {
-                    'url': 'DetailedStats/',
-                    'method': 'get',
-                    'description': 'Get user detailed stats'
+                    'url': 'Stats/DetailedStats?{platform}{username}',
+                    'method': 'get'
                 },
+
             },
 
             'progression_service': {
-                'api_request': 'Progression/',
-                'api': {
-                    'get_codex': {
-                        'url': 'GetCodex',
-                        'method': 'get'
-                    },
 
-                    'get_dog_tags': {
-                        'url': 'GetDogTags',
-                        'method': 'get'
-                    },
+                'get_codex': {
+                    'url': 'Progression/GetCodex?{platform}',
+                    'method': 'get'
+                },
 
-                    'get_filtered_codex': {
-                        'url': 'GetFilteredCodex',
-                        'method': 'get'
-                    },
+                'get_dog_tags': {
+                    'url': 'Progression/GetDogtags?{platform}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_kit_ranks_map': {
-                        'url': 'GetKitRanksMap',
-                        'method': 'get'
-                    },
+                'get_filtered_codex': {
+                    'url': 'Progression/GetFilteredCodex?{platform}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_medals': {
-                        'url': 'GetMedals',
-                        'method': 'get'
-                    },
+                'get_kit_ranks_map': {
+                    'url': 'Progression/GetKitRanksMap?{platform}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_vehicle': {
-                        'url': 'GetVehicle',
-                        'method': 'get'
-                    },
+                'get_medals': {
+                    'url': 'Progression/GetMedals?{platform}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_vehicles': {
-                        'url': 'GetVehicles',
-                        'method': 'get'
-                    },
+                'get_vehicle': {
+                    'url': 'Progression/GetVehicle?{platform}&{vehicle_id}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_weapon': {
-                        'url': 'GetWeapon',
-                        'method': 'get'
-                    },
+                'get_vehicles': {
+                    'url': 'Progression/GetVehicles?{platform}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_weapons': {
-                        'url': 'GetWeapons',
-                        'method': 'get'
-                    },
+                'get_weapon': {
+                    'url': 'Progression/GetWeapon?{platform}&{weapon_id}',
+                    'method': 'get'
+                },
+
+                'get_weapons': {
+                    'url': 'Progression/GetWeapons?{platform}&{username}',
+                    'method': 'get'
                 },
             },
 
             'loadout_service': {
-                'api_request': 'Loadout/',
-                'api': {
 
-                    'get_items': {
-                        'url': 'GetItems',
-                        'method': 'get'
-                    },
+                'get_items': {
+                    'url': 'Loadout/GetItems?{platform}',
+                    'method': 'get'
+                },
 
-                    'get_item_gates': {
-                        'url': 'GetItemGates',
-                        'method': 'get'
-                    },
+                'get_items_gates': {
+                    'url': 'Loadout/GetItemGates?{platform}',
+                    'method': 'get'
+                },
 
-                    'get_kits': {
-                        'url': 'GetKits',
-                        'method': 'get'
-                    },
+                'get_kits': {
+                    'url': 'Loadout/GetKits?{platform}',
+                    'method': 'get'
+                },
 
-                    'get_presets': {
-                        'url': 'GetPresets',
-                        'method': 'get'
-                    },
+                'get_presets': {
+                    'url': 'Loadout/GetPresets?{platform}&{username}',
+                    'method': 'get'
+                },
 
-                    'get_equipped_dog_tags': {
-                        'url': 'GetEquippedDogtags',
-                        'method': 'get'
-                    },
-                }
+                'get_equipped_dog_tags': {
+                    'url': 'Loadout/GetEquippedDogtags?{platform}&{username}',
+                    'method': 'get'
+                },
             }
         }
     }
 }
+
+api_map = _API_MAP
