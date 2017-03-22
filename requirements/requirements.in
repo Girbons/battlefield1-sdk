@@ -1,6 +1,7 @@
 # core
 requests
 pyOpenSSL
+six
 
 # testing
 coverage
