@@ -14,6 +14,9 @@ Usage
 ======
 
 * GET API_KEY: request it here: https://battlefieldtracker.com/site-api/create
+==============================================================================
+
+Example:
 
 .. code-block:: python
     from bf1.battlefield import Battlefield
