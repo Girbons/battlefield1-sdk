@@ -100,5 +100,3 @@ _API_MAP = {
         }
     }
 }
-
-api_map = _API_MAP
