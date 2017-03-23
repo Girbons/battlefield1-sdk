@@ -2,23 +2,21 @@
 Battlefield 1 Web API
 =====================
 
-
-=====
 Setup
 =====
 
 Coming soon on PyPI
 
-======
 Usage
 ======
 
-* GET API_KEY: request it here: https://battlefieldtracker.com/site-api/create
-==============================================================================
+GET API_KEY: request it here: https://battlefieldtracker.com/site-api/create
 
-Example:
+Examples
+========
 
 .. code-block:: python
+
     from bf1.battlefield import Battlefield
     # PLATFORM AVAILABLES
     # 'Xbox'
