@@ -9,11 +9,11 @@ from .exceptions import InvalidAPIKey, BadRequest, Forbidden, ResourceNotFound, 
 class Api:
     def __init__(self):
         self.base_endpoint = _API_MAP['current']['api_root']
-        self._header = {'TRN-Api-Key': '747e52df-f4fa-4e29-8ff2-136978e696fd'}
 
-    def request(self, url, method, **kwargs):
+    def request(self, url, api_key, method, **kwargs):
         complete_url = '{}{}'.format(self.base_endpoint, url)
-        response = request(method=method, url=complete_url, headers=self._header)
+        header = {'TRN-Api-Key': api_key}
+        response = request(method=method, url=complete_url, headers=header)
         return self.handle_response(response)
 
     def handle_response(self, response):
