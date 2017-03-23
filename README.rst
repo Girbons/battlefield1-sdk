@@ -42,7 +42,7 @@ Examples
     bf.loadout_service.get_items()
     bf.loadout_service.get_items_gates()
     bf.loadout_service.get_kits()
-    bf1.loadout_service.get_presets()
-    bf1.loadout_service.get_equipped_dog_tags()
+    bf.loadout_service.get_presets()
+    bf.loadout_service.get_equipped_dog_tags()
 
     # response format is in JSON
