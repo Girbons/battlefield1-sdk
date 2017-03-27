@@ -4,7 +4,6 @@ _API_MAP = {
         'api': {
 
             'stats_service': {
-
                 'career_for_owned_games': {
                     'url': 'Stats/CareerForOwnedGames?{platform}&{username}',
                     'method': 'get'
