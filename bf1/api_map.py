@@ -22,7 +22,6 @@ _API_MAP = {
             },
 
             'progression_service': {
-
                 'get_codex': {
                     'url': 'Progression/GetCodex?{platform}',
                     'method': 'get'
@@ -70,7 +69,6 @@ _API_MAP = {
             },
 
             'loadout_service': {
-
                 'get_items': {
                     'url': 'Loadout/GetItems?{platform}',
                     'method': 'get'
