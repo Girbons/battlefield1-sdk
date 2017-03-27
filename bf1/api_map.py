@@ -15,7 +15,7 @@ _API_MAP = {
                 },
 
                 'detailed_stats': {
-                    'url': 'Stats/DetailedStats?{platform}{username}',
+                    'url': 'Stats/DetailedStats?{platform}&{username}',
                     'method': 'get'
                 },
 
@@ -48,7 +48,7 @@ _API_MAP = {
                 },
 
                 'get_vehicle': {
-                    'url': 'Progression/GetVehicle?{platform}&{vehicle_id}&{username}',
+                    'url': 'Progression/GetVehicle?{platform}&{vehicle}&{username}',
                     'method': 'get'
                 },
 
@@ -58,7 +58,7 @@ _API_MAP = {
                 },
 
                 'get_weapon': {
-                    'url': 'Progression/GetWeapon?{platform}&{weapon_id}',
+                    'url': 'Progression/GetWeapon?{platform}&{weapon}',
                     'method': 'get'
                 },
 
