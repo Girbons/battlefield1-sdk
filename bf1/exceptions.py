@@ -39,3 +39,9 @@ class InternalServerError(Exception):
     """
     500 Internal Server Error
     """
+
+
+class ConfigError(Exception):
+    """
+    Configuration not provided in api_map
+    """
