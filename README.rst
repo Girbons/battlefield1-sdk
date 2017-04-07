@@ -1,6 +1,6 @@
-=====================
-Battlefield 1 Web API
-=====================
+=================
+Battlefield 1 SDK
+=================
 
 .. image:: https://travis-ci.org/Girbons/battlefield1-sdk.svg?branch=master
     :target: https://travis-ci.org/Girbons/battlefield1-sdk
