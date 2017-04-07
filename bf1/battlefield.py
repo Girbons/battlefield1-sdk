@@ -1,6 +1,6 @@
 from . import api_map
 
-from .exceptions import ConfigError
+from .exceptions import ConfigError, PlatformError
 from .resolvers import Resolver
 
 
@@ -26,6 +26,8 @@ class Battlefield:
             return 2
         elif 'Pc' in self.platform:
             return 3
+        else:
+            raise PlatformError('Platform unavailable')
 
     def __getattr__(self, name):
         if name not in self.api_map:

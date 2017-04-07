@@ -46,3 +46,14 @@ Examples
     bf.loadout_service.get_equipped_dog_tags()
 
     # response format is in JSON
+
+Run Tests
+=========
+
+Export your API_KEY::
+
+    export API_KEY='YOUR API KEY'
+
+Run tox::
+
+    tox
