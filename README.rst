@@ -2,6 +2,12 @@
 Battlefield 1 Web API
 =====================
 
+.. image:: https://travis-ci.org/Girbons/battlefield1-sdk.svg?branch=master
+    :target: https://travis-ci.org/Girbons/battlefield1-sdk
+
+.. image:: https://coveralls.io/repos/github/Girbons/battlefield1-sdk/badge.svg?branch=master
+    :target: https://coveralls.io/github/Girbons/battlefield1-sdk?branch=master
+
 Setup
 =====
 
