@@ -18,6 +18,12 @@ class Battlefield:
             self.api_map = default_api_map
 
     def get_platform(self):
+        """
+        For each platform is associated an integer
+        1: xbox
+        2: playstation
+        3: pc
+        """
         if isinstance(self.platform, int):
             return self.platform
         elif 'Xbox' in self.platform:
@@ -30,6 +36,9 @@ class Battlefield:
             raise PlatformError('Platform unavailable')
 
     def __getattr__(self, name):
+        """
+        Return a battlefield instance
+        """
         if name not in self.api_map:
             raise ConfigError('Configuration not available in api_map for this call')
         instance = Battlefield(self.username, self.api_key, self.get_platform(), api_map=self.api_map[name])
@@ -37,6 +46,10 @@ class Battlefield:
         return instance
 
     def __call__(self, *args, **kwargs):
+        """
+        The request happens here
+        return JSON response
+        """
         resolver = Resolver()
         platform = self.get_platform()
         return resolver.resolve(self.username, self.api_key, platform, api_map=self.api_map, **kwargs)

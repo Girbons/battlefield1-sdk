@@ -8,6 +8,11 @@ class Resolver:
         self.api = Api()
 
     def setup(self, username, platform, api_map=None, **kwargs):
+        """
+        Prepare the request with the correct url and method
+        substitute the `{username}` and `{platform}` with
+        the correct parameters
+        """
         url = api_map['url']
         method = api_map['method']
 
@@ -24,5 +29,8 @@ class Resolver:
         self.url = url
 
     def resolve(self, username, api_key, platform, api_map=None, **kwargs):
+        """
+        Make the request
+        """
         self.setup(username, platform, api_map=api_map, **kwargs)
         return self.api.request(url=self.url, method=self.method, api_key=api_key)
