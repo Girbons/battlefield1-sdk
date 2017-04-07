@@ -15,10 +15,10 @@ class Resolver:
             url = url.replace('{platform}', 'platform={}'.format(platform))
         if 'username' in url:
             url = url.replace('{username}', 'displayName={}'.format(username))
-        if '{vehicle} in url' and 'vehicle' in kwargs:
-            url = url.replace('{vehicle}', 'vehicleId={}'.format(kwargs['vehicle']))
-        if '{weapon}'in url and 'weapon' in kwargs:
-            url = url.replace('{weapon}', 'weaponId={}'.format(kwargs['weapon']))
+        # if '{vehicle} in url' and 'vehicle' in kwargs:
+        #    url = url.replace('{vehicle}', 'vehicleId={}'.format(kwargs['vehicle']))
+        # if '{weapon}'in url and 'weapon' in kwargs:
+        #    url = url.replace('{weapon}', 'weaponId={}'.format(kwargs['weapon']))
 
         self.method = method
         self.url = url
