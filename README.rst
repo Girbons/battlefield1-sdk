@@ -11,7 +11,9 @@ Battlefield 1 SDK
 Setup
 =====
 
-Coming soon on PyPI
+From the command line::
+
+    pip install battlefield1-sdk
 
 Usage
 ======
