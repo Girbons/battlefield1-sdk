@@ -41,8 +41,10 @@ Examples
     bf.progression_service.get_filtered_codex()
     bf.progression_service.get_kit_ranks_map()
     bf.progression_service.get_medals()
-    # vehicles call coming soon
-    # weapon call coming soon
+    bf.progression_service.get_vehicle(vehicle='mark v landship')
+    bf.progression_service.get_vehicles()
+    bf.progression_service.get_weapon(weapon='c93')
+    bf.progression_service.get_weapons()
 
     # LOADOUT SERVICE
     bf.loadout_service.get_items()

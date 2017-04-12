@@ -46,6 +46,18 @@ def test_api_call():
     assert len(response) == 4
 
 
+def test_weapon_call():
+    bf = Battlefield('girbons', API_KEY, 'Pc')
+    response = bf.progression_service.get_weapon(weapon='survival knife')
+    assert len(response) == 4
+
+
+def test_vehicle_call():
+    bf = Battlefield('girbons', API_KEY, 'Pc')
+    response = bf.progression_service.get_vehicle(vehicle='mark v landship')
+    assert len(response) == 4
+
+
 def test_custom_api_map():
     custom_api_map = {
         'api': {

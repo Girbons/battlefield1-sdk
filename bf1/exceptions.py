@@ -27,3 +27,15 @@ class EnvVarNotSet(Exception):
     """
     Environment variable is not set
     """
+
+
+class VehicleNotFound(Exception):
+    """
+    Vehicle not found in configuration file
+    """
+
+
+class WeaponNotFound(Exception):
+    """
+    Weapon not found in configuration file
+    """
