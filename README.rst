@@ -1,8 +1,6 @@
 =================
 Battlefield 1 SDK
 =================
-.. image:: https://badge.fury.io/py/battlefield1-sdk.svg
-    :target: https://badge.fury.io/py/battlefield1-sdk
 .. image:: https://travis-ci.org/Girbons/battlefield1-sdk.svg?branch=master
     :target: https://travis-ci.org/Girbons/battlefield1-sdk
 .. image:: https://coveralls.io/repos/github/Girbons/battlefield1-sdk/badge.svg?branch=master
