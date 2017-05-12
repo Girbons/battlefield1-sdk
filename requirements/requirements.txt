@@ -6,7 +6,7 @@
 #
 asn1crypto==0.22.0        # via cryptography
 cffi==1.10.0              # via cryptography
-coverage==4.3.4
+coverage==4.4
 cryptography==1.8.1       # via pyopenssl
 flake8==3.3.0
 idna==2.5                 # via cryptography
@@ -18,7 +18,7 @@ pycparser==2.17           # via cffi
 pyflakes==1.5.0           # via flake8
 pyopenssl==17.0.0
 pyparsing==2.2.0          # via packaging
-pytest-cov==2.4.0
+pytest-cov==2.5.1
 pytest==3.0.7
-requests==2.13.0
+requests==2.14.2
 six==1.10.0               # via cryptography, packaging, pyopenssl
