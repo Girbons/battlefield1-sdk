@@ -1,7 +1,7 @@
 =================
 Battlefield 1 SDK
 =================
-.. image:: https://img.shields.io/coveralls/Girbons/battlefield1-sdk/master.svg?style=flat-square
+.. image:: https://img.shields.io/travis/Girbons/battlefield1-sdk/master.svg?style=flat-square
     :target: https://travis-ci.org/Girbons/battlefield1-sdk
     :alt: Build Status
 .. image:: https://img.shields.io/coveralls/Girbons/battlefield1-sdk/master.svg?style=flat-square
