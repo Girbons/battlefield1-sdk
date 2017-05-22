@@ -1,13 +1,13 @@
 =================
 Battlefield 1 SDK
 =================
-.. image:: https://travis-ci.org/Girbons/battlefield1-sdk.svg?branch=master
+.. image:: https://img.shields.io/coveralls/Girbons/battlefield1-sdk/master.svg?style=flat-square
     :target: https://travis-ci.org/Girbons/battlefield1-sdk
-.. image:: https://coveralls.io/repos/github/Girbons/battlefield1-sdk/badge.svg?branch=master
+    :alt: Build Status
+.. image:: https://img.shields.io/coveralls/Girbons/battlefield1-sdk/master.svg?style=flat-square
     :target: https://coveralls.io/github/Girbons/battlefield1-sdk?branch=master
-.. image:: https://requires.io/github/Girbons/battlefield1-sdk/requirements.svg?branch=master
-     :target: https://requires.io/github/Girbons/battlefield1-sdk/requirements/?branch=master
-     :alt: Requirements Status
+    :alt: Test Coverage
+
 
 Setup
 =====
@@ -19,7 +19,7 @@ From the command line::
 Usage
 ======
 
-GET API_KEY: request it here: https://battlefieldtracker.com/site-api/create
+GET API_KEY: https://battlefieldtracker.com/site-api/create
 
 Examples
 ========
