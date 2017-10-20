@@ -7,8 +7,22 @@ from .utils import API_KEY
 
 
 def test_platform_play():
-    bf = Battlefield('test', '123456', 'Playstation')
+    bf = Battlefield('test', '123456', 'playstation')
     assert bf.get_platform() == 2
+
+
+def test_platform_with_number_lower_than_1():
+    bf = Battlefield('test', '123456', 0)
+    with pytest.raises(PlatformError) as ex_info:
+        bf.get_platform()
+    assert 'Platform unavailable' in str(ex_info)
+
+
+def test_platform_with_number_greater_than_3():
+    bf = Battlefield('test', '123456', 4)
+    with pytest.raises(PlatformError) as ex_info:
+        bf.get_platform()
+    assert 'Platform unavailable' in str(ex_info)
 
 
 def test_platform_is_integer():
@@ -22,7 +36,7 @@ def test_platform_xbox():
 
 
 def test_platform_pc():
-    bf = Battlefield('test', '123456', 'Pc')
+    bf = Battlefield('test', '123456', 'PC')
     assert bf.get_platform() == 3
 
 

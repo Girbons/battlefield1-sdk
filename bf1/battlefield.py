@@ -24,15 +24,23 @@ class Battlefield:
         2: playstation
         3: pc
         """
-        if isinstance(self.platform, int):
+        raise_exception = False
+
+        if isinstance(self.platform, int) and self.platform >= 1 and self.platform <= 3:
             return self.platform
-        elif 'Xbox' in self.platform:
-            return 1
-        elif 'Playstation' in self.platform:
-            return 2
-        elif 'Pc' in self.platform:
-            return 3
-        else:
+        try:
+            if 'xbox' in self.platform.lower():
+                return 1
+            elif 'playstation' in self.platform.lower():
+                return 2
+            elif 'pc' in self.platform.lower():
+                return 3
+            else:
+                raise_exception = True
+        except:
+            raise_exception = True
+
+        if raise_exception:
             raise PlatformError('Platform unavailable')
 
     def __getattr__(self, name):

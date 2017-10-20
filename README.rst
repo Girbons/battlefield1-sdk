@@ -28,9 +28,9 @@ Examples
 
     from bf1.battlefield import Battlefield
     # PLATFORM AVAILABLES
-    # 'Xbox'
-    # 'Playstation'
-    # 'Pc'
+    # 'xbox'
+    # 'playstation'
+    # 'pc'
     bf = Battlefield(username='YOUR USERNAME', api_key='YOUR API KEY', platform='YOUR PLATFORM')
 
     # STATS SERVICE
