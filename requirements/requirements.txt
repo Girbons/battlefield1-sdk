@@ -7,7 +7,7 @@
 asn1crypto==0.22.0        # via cryptography
 cffi==1.10.0              # via cryptography
 coverage==4.4
-cryptography==1.8.1       # via pyopenssl
+cryptography==2.3       # via pyopenssl
 flake8==3.3.0
 idna==2.5                 # via cryptography
 mccabe==0.6.1             # via flake8
