@@ -1,11 +1,3 @@
 # core
 requests
 pyOpenSSL
-
-# testing
-coverage
-pytest
-pytest-cov
-
-# codestyle
-flake8

@@ -1,12 +1,16 @@
 =================
 Battlefield 1 SDK
 =================
-.. image:: https://img.shields.io/travis/Girbons/battlefield1-sdk/master.svg?style=flat-square
+.. image:: https://travis-ci.org/Girbons/battlefield1-sdk.svg?branch=master
     :target: https://travis-ci.org/Girbons/battlefield1-sdk
-    :alt: Build Status
-.. image:: https://img.shields.io/coveralls/Girbons/battlefield1-sdk/master.svg?style=flat-square
+.. image:: https://coveralls.io/repos/github/Girbons/battlefield1-sdk/badge.svg?branch=master
     :target: https://coveralls.io/github/Girbons/battlefield1-sdk?branch=master
-    :alt: Test Coverage
+.. image:: https://pyup.io/repos/github/Girbons/battlefield1-sdk/shield.svg
+     :target: https://pyup.io/repos/github/Girbons/battlefield1-sdk/
+     :alt: Updates
+.. image:: https://pyup.io/repos/github/Girbons/battlefield1-sdk/python-3-shield.svg
+     :target: https://pyup.io/repos/github/Girbons/battlefield1-sdk/
+     :alt: Python 3
 
 
 Setup
